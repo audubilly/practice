@@ -11,17 +11,14 @@ public class PC {
         this.theMonitor = theMonitor;
         this.theMotherBoard = theMotherBoard;
     }
-
-    public Case getTheCase() {
-        return theCase;
+    public  void powerUp(){
+        theCase.pressPowerButton();
+        drawLogo();
     }
 
-    public Monitor getTheMonitor() {
-        return theMonitor;
+    private void drawLogo(){
+        theMonitor.drawPixelArt(1200,1300,"black");
     }
 
-    public MotherBoard getTheMotherBoard() {
-        return theMotherBoard;
-    }
 }
 

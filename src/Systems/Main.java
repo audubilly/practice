@@ -14,11 +14,7 @@ public class Main {
                 "systems",4,2);
 
         PC pc = new PC(theCase,theMonitor,theMotherBoard);
-        pc.getTheCase().getPowerSupply();
-        pc.getTheMonitor().drawPixelArt(5,5 ,"Green");
-        pc.getTheMotherBoard().loadProgram("Scrum");
-        pc.getTheMotherBoard().getManufacturer();
-        pc.getTheCase().pressPowerButton();
+        pc.powerUp();
     }
 
 }
