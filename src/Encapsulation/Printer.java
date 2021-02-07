@@ -42,7 +42,7 @@ public class Printer {
     public int incrementNumberOfPagesPrinted(int pages) {
         int pagesToPrint = pages;
         if (duplex) {
-            pagesToPrint = pages * 2;
+            pagesToPrint = (pages / 2) + (pages % 2);
             System.out.println("printing in duplex mode");
         }
         this.pagesPrinted += pagesToPrint;
@@ -52,6 +52,7 @@ public class Printer {
     public int getPagesPrinted() {
         return pagesPrinted;
     }
-}
+
+  }
 
 

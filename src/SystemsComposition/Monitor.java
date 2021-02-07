@@ -1,4 +1,4 @@
-package Systems;
+package SystemsComposition;
 
 public class Monitor {
     private String model;

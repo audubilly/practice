@@ -1,4 +1,4 @@
-package Systems;
+package SystemsComposition;
 
 public class Case {
     private String model;
