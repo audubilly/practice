@@ -10,11 +10,16 @@ public class Main {
         Monitor theMonitor = new Monitor("32inches","DellScreens"
                 ,32,new Resolution(23,30));
 
-        MotherBoard theMotherBoard = new MotherBoard("corei3","DEllMotherBoards",
+        MotherBoard theMotherBoard = new MotherBoard("core i3","DEllMotherBoards",
                 "systems",4,2);
 
         PC pc = new PC(theCase,theMonitor,theMotherBoard);
         pc.powerUp();
+
+
+
+//        theCase.pressPowerButton();
+//        theMonitor.drawPixelArt(1200,1200,"gold");
 
     }
 

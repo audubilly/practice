@@ -11,7 +11,7 @@ public class PC {
         this.theMonitor = theMonitor;
         this.theMotherBoard = theMotherBoard;
     }
-    public  void powerUp(){
+    public void powerUp(){
         theCase.pressPowerButton();
         drawLogo();
     }
