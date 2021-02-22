@@ -21,5 +21,12 @@ public class ResizingArrays {
            System.out.println();
        }
    }
+    public static void resizeArray(){
+        int [] original = baseData;
+        baseData = new int[13];
+        for(int i = 0; i< original.length; i++){
+            baseData[i] = original[i];
+        }
+    }
 
 }
