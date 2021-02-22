@@ -1,5 +1,6 @@
 package Arrays;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class ResizingArrays {
@@ -11,17 +12,18 @@ public class ResizingArrays {
         System.out.println("Enter 10 numbers: ");
         getInput();
         printArray(baseData);
+        System.out.println("this is the base array " + Arrays.toString(baseData));
         resizeArray();
-        baseData[10] = 45;
-        baseData[11] = 23;
-        baseData[12] = 76;
+//        baseData[10] = 45;
+//        baseData[11] = 23;
+//        baseData[12] = 76;
+        System.out.println("this is the resized array " + Arrays.toString(baseData));
 //
     }
 
    public static void getInput(){
        for(int i = 0; i < baseData.length; i++){
            baseData[i] = scanner.nextInt();
-//           scanner.nextLine();
        }
    }
 
