@@ -18,7 +18,7 @@ public class GroceryListMain {
             scanner.nextLine();
 
             switch (choice){
-                case 0 -> printInstruction;
+                case 0 -> printInstructions();
                 break;
                 case 1 -> groceryLists.printGroceryList();
                 break;
@@ -35,6 +35,23 @@ public class GroceryListMain {
             }
 
         }
+    }
+
+    public static void printInstructions(){
+        System.out.println("\n press");
+        System.out.println("\t 0- To print choice options.");
+        System.out.println("\t 1- To print the list of the grocery Item");
+        System.out.println("\t 2- To add an Item to the list");
+        System.out.println("\t 3- To modify an item on the list");
+        System.out.println("\t 4- To remove an Item from the list");
+        System.out.println("\t 5 - To To search for an item on the list");
+        System.out.println("\t 6 - To quit the application");
+
+    }
+
+    public static void addItem(){
+        System.out.println("Enter groceryItem to add to the List: ");
+        groceryLists.addGroceryItem(scanner.nextLine());
     }
 
 }
