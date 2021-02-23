@@ -22,4 +22,9 @@ public class GroceryLists {
         System.out.println("the grocery item" + (position+1) + "has being modified");
     }
 
+    public void removeGroceryItem(int position){
+        String newItems = groceryLists.get(position);
+        groceryLists.remove(position);
+    }
+
 }
