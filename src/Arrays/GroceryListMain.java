@@ -28,7 +28,7 @@ public class GroceryListMain {
                 break;
                 case 4 -> modifyItem();
                 break;
-                case 5 -> serachForItem();
+                case 5 -> searchForItem();
                 break;
                 case 6 -> quit = true;
                 break;
@@ -50,12 +50,12 @@ public class GroceryListMain {
     }
 
     public static void addItem(){
-        System.out.println("Enter groceryItem to add to the List: ");
+        System.out.print("Enter groceryItem to add to the List: ");
         groceryLists.addGroceryItem(scanner.nextLine());
     }
 
     public static void modifyItem(){
-        System.out.println("Enter item number: ");
+        System.out.print("Enter item number: ");
         int itemNo = scanner.nextInt();
         scanner.nextLine();
         System.out.println("Enter replacement Item: ");
@@ -64,9 +64,17 @@ public class GroceryListMain {
     }
 
     public static void removeItem(){
-        System.out.println("Enter item number: ");
+        System.out.print("Enter item number: ");
         int itemNo = scanner.nextInt();
         scanner.nextLine();
         groceryLists.removeGroceryItem(itemNo);
+    }
+
+    public static void searchForItem(){
+        System.out.print("Enter item number to search for: ");
+        String searchItem = scanner.nextLine();
+        groceryLists.findItem(searchItem);
+        System.out.println();
+
     }
 }

@@ -27,4 +27,13 @@ public class GroceryLists {
         groceryLists.remove(position);
     }
 
+    public String findItem(String searchItem){
+        boolean exists = groceryLists.contains(searchItem);
+        int position = groceryLists.indexOf(searchItem);
+        if(position > 0){
+            return groceryLists.get(position);
+        }
+        return null;
+    }
+
 }
