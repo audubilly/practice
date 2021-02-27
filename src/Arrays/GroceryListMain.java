@@ -85,6 +85,10 @@ public class GroceryListMain {
         newArray.addAll(groceryLists.getGroceryLists());
 
 
-        ArrayList<String> nextArray = new ArrayList<String>(groceryLists.getGroceryLists());
+        ArrayList<String> nextArray = new ArrayList<String>
+                (groceryLists.getGroceryLists());
+
+        String[] myArray = new String[(groceryLists.getGroceryLists().size())];
+        myArray =  groceryLists.getGroceryLists().toArray(myArray);
     }
 }
