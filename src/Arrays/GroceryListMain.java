@@ -1,5 +1,6 @@
 package Arrays;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class GroceryListMain {
@@ -66,7 +67,7 @@ public class GroceryListMain {
         System.out.print("Enter item number: ");
         int itemNo = scanner.nextInt();
         scanner.nextLine();
-        groceryLists.removeGroceryItem(itemNo);
+        groceryLists.removeGroceryItem(itemNo-1);
     }
 
     public static void searchForItem(){
@@ -77,5 +78,11 @@ public class GroceryListMain {
         }else{
             System.out.println(searchItem + " is not found in the list");
         }
+    }
+
+    public static void processArrayList(){
+        ArrayList<String> newArray = new ArrayList<String>();
+        newArray.addAll(groceryLists.getGroceryLists());
+
     }
 }
