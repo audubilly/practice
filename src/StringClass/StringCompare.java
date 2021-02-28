@@ -22,5 +22,18 @@ public class StringCompare {
         }else {
             System.out.println("s1 is not the same object \"Hello\"");
         }
+
+        if(s3.equalsIgnoreCase(s4)){
+            System.out.printf("%s equals %s with case ignored%n", s3, s4);
+        }else{
+            System.out.println("s3 does not equal s4");
+        }
+        System.out.printf("%ns1.compareTo s2 is %d", s1.compareTo(s2));
+        System.out.printf("%ns1.compareTo s1 is %d", s1.compareTo(s1));
+        System.out.printf("%ns2.compareTo s1 is %d", s2.compareTo(s1));
+        System.out.printf("%ns3.CompareTo s4 is %d", s3.compareTo(s4));
+
+
+
     }
 }
