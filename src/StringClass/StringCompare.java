@@ -31,9 +31,20 @@ public class StringCompare {
         System.out.printf("%ns1.compareTo s2 is %d", s1.compareTo(s2));
         System.out.printf("%ns1.compareTo s1 is %d", s1.compareTo(s1));
         System.out.printf("%ns2.compareTo s1 is %d", s2.compareTo(s1));
-        System.out.printf("%ns3.CompareTo s4 is %d", s3.compareTo(s4));
+        System.out.printf("%ns3.CompareTo s4 is %d%n", s3.compareTo(s4));
 
+        if(s3.regionMatches(0,s4,0,5)){
+            System.out.println("first five characters of s3 and s4 match");
+        }else {
+            System.out.println("the first five characters of s3 and s4 don't match.");
+        }
 
+        if (s3.regionMatches(true, 0, s4, 0, 5)) {
+            System.out.println("first five characters match with case ignored ");
+        }else{
+            System.out.println("first five characters don't match");
+        }
 
+        
     }
 }
