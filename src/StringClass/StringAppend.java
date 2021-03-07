@@ -18,5 +18,29 @@ public class StringAppend {
         StringBuilder builder1 = new StringBuilder();
 
 
+        builder1.append(objectRef)
+                .append("%n")
+                .append(string)
+                .append("%n")
+                .append(charArray)
+                .append("%n")
+                .append(charArray, 0, 3)
+                .append("%n")
+                .append(booleanValue)
+                .append("%n")
+                .append(characterValue)
+                .append("%n")
+                .append(integerValue)
+                .append("%n")
+                .append(longValue)
+                .append("%n")
+                .append(floatValue)
+                .append("%n")
+                .append(doubleValue)
+                .append("%n")
+                .append(lastBuffer);
+
+
+        System.out.printf("buffer contains%n%s%n", builder1.toString());
     }
 }
