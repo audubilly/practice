@@ -15,8 +15,8 @@ class MobilePhoneTest {
 
     @BeforeEach
     void setUp() {
-        mobilePhone = new MobilePhone();
-        contacts = new Contacts("james","09056780444");
+        mobilePhone = new MobilePhone("09056790444");
+        contacts = new Contacts("james", "09056780444");
     }
 
     @AfterEach
@@ -24,18 +24,17 @@ class MobilePhoneTest {
     }
 
     @Test
-    void tesThatContactsCanBeStoredOnAMobilePhone(){
-      ArrayList<String> contacts = new ArrayList<>();
-        assertEquals(0,contacts.size());
+    void testThatContactsCanBeStoredOnAMobilePhone() {
+        ArrayList<String> contacts = new ArrayList<>();
+        assertEquals(0, contacts.size());
+    }
 
+    @Test
+    void testThatContactsCanBeAddedToTheMobilePhone(){
+        contacts = new Contacts("sule","09045672884");
+        mobilePhone.addNewContacts(contacts);
+        assertEquals(1,mobilePhone.getContact());
 
     }
 
-//    @Test
-//    void storeContacts() {
-//    }
-//
-//    @Test
-//    void getContact() {
-//    }
 }

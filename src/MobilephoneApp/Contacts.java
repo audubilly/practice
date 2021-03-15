@@ -22,4 +22,8 @@ public class Contacts {
         return new Contacts(name,phoneNumber);
     }
 
+    @Override
+    public String toString() {
+        return String.format(" Name : %s%n", "phoneNumber : %s%n");
+    }
 }
