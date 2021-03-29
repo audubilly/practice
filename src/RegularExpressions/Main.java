@@ -10,5 +10,12 @@ public class Main {
         String alphanumeric = "abcde162626snsbsytu2iu1yu1u";
         System.out.println(alphanumeric.replaceAll(".","y"));
         System.out.println(alphanumeric.replaceAll("^abcde", "xxx"));
+
+        String text = "I am not angry about what you said";
+        System.out.println(text);
+        System.out.println("*****************************");
+
+        String newText = string.replaceAll("I", "i");
+        System.out.println(newText);
     }
 }
