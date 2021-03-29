@@ -17,5 +17,9 @@ public class Main {
 
         String newText = string.replaceAll("I", "i");
         System.out.println(newText);
+
+        String numerics = "avvsgshsjsudgdthdjdydudkdjfg";
+       String newNumerics = numerics.toUpperCase();
+        System.out.println(newNumerics);
     }
 }
