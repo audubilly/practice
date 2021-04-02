@@ -55,7 +55,7 @@ public class MobilePhone {
             System.out.println("Contact with the name " + newContacts.getName() + "already exists on file. update was not successful");
         }
         this.myContacts.set(foundPosition , newContacts);
-        System.out.println(oldContact.getName() + ", was replaced with " + newContacts.getName());
+        System.out.println(oldContact.getName() + ", was replaced with " + newContacts.getName() +".");
         return true;
     }
 

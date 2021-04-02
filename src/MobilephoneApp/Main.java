@@ -58,7 +58,7 @@ public class Main {
         String newNumber = scanner.nextLine();
         Contacts newContacts = Contacts.createContacts(newName,newNumber);
         if (mobilePhone.updateContact(existingContactRecords, newContacts)) {
-            System.out.println("Successfully updated");
+            System.out.println("Successfully updated.");
         }else{
             System.out.println("Error updating contact");
         }
@@ -86,7 +86,7 @@ public class Main {
             System.out.println("contact not found");
             return;
         }
-        System.out.println("Name: " +existingContactRecords.getName() + "phoneNumber " + existingContactRecords.getPhoneNumber());
+        System.out.println("Name: " +existingContactRecords.getName() + " ,phoneNumber " + existingContactRecords.getPhoneNumber());
         }
 
 
@@ -99,7 +99,8 @@ public class Main {
         if(mobilePhone.addNewContacts(newContact)){
             System.out.println("New contact added: Name: " + name + " ,phone Number: " + phoneNumber);
         }else {
-            System.out.println("Contact " + name + " Already exists on phone");
+            System.out.println("Contact " + name + " Already exists on phone" +
+                    "");
         }
     }
 
@@ -114,7 +115,7 @@ public class Main {
                             "2 - to Add a new Contact\n" +
                             "3 - to update existing contacts\n" +
                             "4 - to remove existing contacts\n" +
-                            "5 - to query if a contact exists" +
+                            "5 - to query if a contact exists\n" +
                             "6 - to print a list of existing contacts");
         System.out.println("Choose an option: ");
 
