@@ -11,13 +11,13 @@ class BranchTest {
 
     @BeforeEach
     void setUp() {
-        branch = new Branch();
+        branch = new Branch("suleja");
     }
 
     @AfterEach
     void tearDown() {
     }
 
-    @Test
-    void testThat
+//    @Test
+//    void testThat
 }

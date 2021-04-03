@@ -28,5 +28,13 @@ public class Customer {
         return transactions;
     }
 
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "name='" + name + '\'' +
+                ", transactions=" + transactions +
+                '}';
+    }
+
 
 }
