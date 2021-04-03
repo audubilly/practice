@@ -39,6 +39,7 @@ public class Branch {
         return null;
     }
 
+
     public String getName() {
         return name;
     }
