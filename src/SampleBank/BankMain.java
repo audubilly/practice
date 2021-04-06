@@ -1,9 +1,10 @@
 package SampleBank;
 
-public class Main {
+public class BankMain {
     public static void main(String[] args) {
 
         Bank bank = new Bank("Goldman Sachs");
+        Branch branch = new Branch("yaba");
 
         bank.addBranch("surulere");
         bank.addCustomer("surulere","Adams",234.65);
@@ -16,26 +17,9 @@ public class Main {
 
         bank.listCustomers("yaba",true);
 
-
-//        bank.getBranches();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        System.out.print(bank.toString());
+//        System.out.print(branch.toString());
+//
 
 
     }

@@ -48,4 +48,12 @@ public class Branch {
     public ArrayList<Customer> getCustomers() {
         return customers;
     }
+
+    @Override
+    public String toString() {
+        return "Branch{" +
+                "name='" + name + '\'' +
+                ", customers=" + customers +
+                '}';
+    }
 }

@@ -12,13 +12,26 @@ public class Bank {
         this.branches = new ArrayList<Branch>();
     }
 
+    @Override
+    public String toString() {
+        StringBuilder builder = new StringBuilder();
+        for(int i = 0; i < branches.size(); i++){
+            builder.append(branches.get(i).getName().toUpperCase()).append(",");
+        }
+        return String.format("Bank Branches in Nigeria are (" +
+                  builder.toString() +
+                ')');
+    }
+
     public String getName() {
         return name;
     }
 
     public ArrayList<Branch> getBranches() {
-        return branches;
+
+       return branches;
     }
+
 
     public boolean addBranch(String branchName) {
         if (findBranch(branchName) == null) {
@@ -77,9 +90,7 @@ public class Bank {
         } else {
             return false;
         }
-
+    }
     }
 
 
-
-    }
