@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class AutoBoxing {
     public static void main(String[] args) {
 
+
         ArrayList<Integer> myInt = new ArrayList<>();
         myInt.add(54);
         Integer integer = 45;
@@ -26,5 +27,6 @@ public class AutoBoxing {
         System.out.println(myString.add(String.valueOf(myString)));
 
     }
+
 
 }
