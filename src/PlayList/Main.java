@@ -3,6 +3,7 @@ package PlayList;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.ListIterator;
+import java.util.Scanner;
 
 public class Main {
 
@@ -42,12 +43,81 @@ public class Main {
     play(playlist);
     }
 
-    public  static  void play(LinkedList<Song> playlist){
+    public  static  void play(LinkedList<Song> playlist) {
+        Scanner scanner = new Scanner(System.in);
+        boolean quit = false;
+        boolean forward = true;
         ListIterator<Song> listIterator = playlist.listIterator();
-        if (playlist.size() == 0){
+        if (playlist.size() == 0) {
             System.out.println("No songs in the playlist");
-        }else {
+        } else {
             System.out.println("Now playing: " + listIterator.next().toString());
+        }
+        while(!quit){
+            int action = scanner.nextInt();
+//            scanner.nextLine();
+            switch (action){
+                case 0:
+                    System.out.println("Playlist complete");
+                    break;
+                case 1 :
+                    if(!forward){
+                        if(listIterator.hasNext()){
+                            listIterator.next();
+                        }
+                        forward = true;
+
+                    if(listIterator.hasNext()){
+                               System.out.println("Now playing: " + listIterator.next().toString());
+
+                    }else {
+                        System.out.println("We have reached the end of the playlist");
+                        forward= false;
+                        }
+                    }
+                    break;
+
+                case 2:
+                    if(forward){
+                        if(listIterator.hasPrevious()){
+                            listIterator.previous();
+                        }
+                        forward = false;
+                    }
+                    if(listIterator.hasPrevious()){
+                        System.out.println("Now playing: " + listIterator.previous().toString());
+                    }else {
+                        System.out.println("We are at the beginning of the playlist");
+                        forward= false;
+                    }
+                    break;
+
+                case 3:
+                    break;
+
+                case 4:
+//                    printPlaylist();
+                    break;
+
+                case 5:
+                   printMenu();
+                    break;
+
+
+
+
+            }
+
+        }
+    }
+
+    public static void printMenu(){
+        System.out.println("\n select action from here \n");
+        System.out.println("1- forward song \n"+
+                "2- rewind song \n"+
+                "3- printPlaylist \n");
+        System.out.println("choose an action");
+
         }
     }
 
@@ -55,4 +125,4 @@ public class Main {
 
     
 
-}
+

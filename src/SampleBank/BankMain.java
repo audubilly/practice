@@ -15,6 +15,10 @@ public class BankMain {
         bank.listCustomers("surulere",true);
 
         bank.addBranch("yaba");
+        bank.addBranch("sabo");
+        bank.addBranch("Victoria Island");
+        bank.addBranch("Ikotun");
+        bank.addBranch("ikeja");
         bank.addCustomerTransaction("yaba","joe",900.0);
 
         bank.listCustomers("yaba",true);
