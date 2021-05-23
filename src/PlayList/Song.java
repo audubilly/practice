@@ -4,7 +4,7 @@ package PlayList;
 import java.util.ArrayList;
 
 public class Song {
-    private  String title ;
+    private String title ;
     private double duration;
 
     public Song(String title, double duration) {
