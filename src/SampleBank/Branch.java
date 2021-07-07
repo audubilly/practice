@@ -33,13 +33,10 @@ public class Branch {
             Customer checkedCustomer = this.customers.get(i);
             if(checkedCustomer.getName().equals(customerName)){
                 return checkedCustomer;
-
             }
         }
         return null;
     }
-
-
 
     public String getName() {
         return name;
